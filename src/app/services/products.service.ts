@@ -20,5 +20,11 @@ export class ProductsService {
     return this.http.post<Product>(this.baseApiUrl + "/api/products", newProduct);
   }
 
- 
+  getProduct(id: string): Observable<Product> {
+    return this.http.get<Product>(this.baseApiUrl + '/api/products/' + id );
+  }
+
+  updateProduct(id: string, updateProductRequest: Product): Observable<Product> {
+    return this.http.put<Product>(this.baseApiUrl + '/api/products/' + id, updateProductRequest);
+  }
 }
