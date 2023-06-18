@@ -20,7 +20,7 @@
             <td>{{ product.Color }}</td>
             <td>{{ product.Price | currency }}</td>
             <td><a [routerLink]="['/products', 'edit',product.id]">Edit</a></td>
-            <td><a>Edit</a></td>
+            <td><a [routerLink]="['/products', 'delete',product.id]">Delete</a></td>
           </tr>
         </tbody>
     </table>
