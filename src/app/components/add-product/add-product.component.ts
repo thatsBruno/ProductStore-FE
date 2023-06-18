@@ -17,18 +17,17 @@ export class AddProductComponent {
     Price: 0
   };
 
-  constructor(private productsService: ProductsService, private router: Router){}
-
-  addProducts(){
-    this.productsService.addProduct(this.newProduct)
-      .subscribe({
+  constructor(private productService: ProductsService, private router: Router){}
+ 
+  addProducts() {
+    this.productService.addProduct(this.newProduct).subscribe({
         next: (product) => {
           this.router.navigate(['products']);
         },
-        error: (response) =>{
+        error: (response) => {
           console.log(response)
         }
-      })
+      });
   }
 }
 

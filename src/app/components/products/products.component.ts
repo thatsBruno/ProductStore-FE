@@ -20,7 +20,7 @@ export class ProductsComponent  implements OnInit{
         },
         error: (response) => {
           console.log(response)
-        }
+        },
       });
   }
 
@@ -33,10 +33,7 @@ export class ProductsComponent  implements OnInit{
           .then(() => {
             this.router.navigate([currentUrl])
           });
-        },
-        error: (error) => {
-          console.log(error)
         }
-      })
+      });
   }
 }

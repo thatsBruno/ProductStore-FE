@@ -15,12 +15,12 @@
         <tbody>
           <tr *ngFor="let product of products">
             <th>{{ product.id }}</th>
-            <td>{{ product.Name }}</td>
-            <td>{{ product.Type }}</td>
-            <td>{{ product.Color }}</td>
-            <td>{{ product.Price | currency }}</td>
-            <td><a [routerLink]="['/products', 'edit',product.id]">Edit</a></td>
-            <td><a [routerLink]="['/products', 'delete',product.id]">Delete</a></td>
+            <th>{{ product.Name }}</th>
+            <th>{{ product.Type }}</th>
+            <th>{{ product.Color }}</th>
+            <th>{{ product.Price | currency }}</th>
+            <th><a [routerLink]="['/products', 'edit',product.id]">Edit</a></th>
+            <th><a [routerLink]="['/products', 'delete',product.id]">Delete</a></th>
           </tr>
         </tbody>
     </table>
