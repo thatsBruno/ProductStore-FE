@@ -8,19 +8,6 @@ import { Product } from 'src/app/models/product.model';
 })
 export class ProductsComponent {
   products: Product[] = [
-    {
-      id: '23232323',
-      Name: "T-shirt",
-      Type: "Garment",
-      Color: "red",
-      Price: 9.99
-    },
-    {
-      id: '23222223',
-      Name: "Shirt",
-      Type: "Garment",
-      Color: "red",
-      Price: 19.99
-    }
+   
   ];
 }
