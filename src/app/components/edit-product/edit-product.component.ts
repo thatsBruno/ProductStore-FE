@@ -30,13 +30,13 @@ export class EditProductComponent implements OnInit {
         if(id) {
           this.productsService.getProduct(id)
             .subscribe({
-              next: (response) => {
-                this.updateProductRequest = response;
+              next: (product) => {
+                this.updateProductRequest = product;
               }
-            })
+            });
         }
       }
-    })
+    });
   }
 
   updateProducts(){
@@ -48,7 +48,7 @@ export class EditProductComponent implements OnInit {
         error: (error) => {
           console.log(error)
         }
-      })
+      });
   }
 
 }

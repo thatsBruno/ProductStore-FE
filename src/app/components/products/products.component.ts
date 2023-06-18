@@ -24,16 +24,16 @@ export class ProductsComponent  implements OnInit{
       });
   }
 
-  deleteProduct(id: string){
-    this.productService.deleteProduct(id)
-      .subscribe({
-        next: (response) => {
-          let currentUrl = this.router.url;
-          this.router.navigateByUrl('/', {skipLocationChange: true})
+  deleteProduct(id: string) {
+    this.productService.deleteProduct(id).subscribe({
+      next: (response) => {
+        let currentUrl = this.router.url;
+        this.router
+          .navigateByUrl('/', { skipLocationChange: true })
           .then(() => {
-            this.router.navigate([currentUrl])
+            this.router.navigate([currentUrl]);
           });
-        }
-      });
+      }
+    });
   }
 }
