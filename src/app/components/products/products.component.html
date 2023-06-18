@@ -8,6 +8,8 @@
             <th scope="col">Type</th>
             <th scope="col">Color</th>
             <th scope="col">Price</th>
+            <th></th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -17,6 +19,8 @@
             <td>{{ product.Type }}</td>
             <td>{{ product.Color }}</td>
             <td>{{ product.Price | currency }}</td>
+            <td><a [routerLink]="['/products', 'edit',product.id]">Edit</a></td>
+            <td><a>Edit</a></td>
           </tr>
         </tbody>
     </table>

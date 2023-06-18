@@ -15,4 +15,10 @@ export class ProductsService {
     return this.http.get<Product[]>(this.baseApiUrl + '/api/products')
   }
 
+  addProduct(newProduct: Product): Observable<Product>{
+    newProduct.id = '00000000-0000-0000-0000-000000000000'
+    return this.http.post<Product>(this.baseApiUrl + "/api/products", newProduct);
+  }
+
+ 
 }
