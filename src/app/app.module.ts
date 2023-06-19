@@ -18,9 +18,9 @@ import { EditProductComponent } from './components/edit-product/edit-product.com
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
