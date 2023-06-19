@@ -4,19 +4,19 @@
       <div class="col-6">
           <form #form="ngForm" (ngSubmit)="addProducts()">
               <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
+                <label for="Name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" [(ngModel)] = "newProduct.Name">
               </div>
               <div class="mb-3">
-                <label for="type" class="form-label">Type</label>
+                <label for="Type" class="form-label">Type</label>
                 <input type="text" class="form-control" id="type" name="type" [(ngModel)] = "newProduct.Type">
               </div>
               <div class="mb-3">
-                  <label for="color" class="form-label">Color</label>
+                  <label for="Color" class="form-label">Color</label>
                   <input type="text" class="form-control" id="color" name="color" [(ngModel)] = "newProduct.Color">
                 </div>
                 <div class="mb-3">
-                  <label for="price" class="form-label">Price</label>
+                  <label for="Price" class="form-label">Price</label>
                   <input type="number" class="form-control" id="price" name="price" [(ngModel)] = "newProduct.Price">
                 </div>
               <button type="submit" class="btn btn-primary">Submit</button>

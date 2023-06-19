@@ -25,7 +25,7 @@ export class AddProductComponent {
           this.router.navigate(['products']);
         },
         error: (response) => {
-          console.log(response)
+          console.log(response);
         }
       });
   }

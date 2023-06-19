@@ -7,12 +7,12 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProductsService {
-  baseApiUrl: string = 'https://localhost:7143'
+  baseApiUrl: string = 'https://localhost:7143';
 
   constructor(private http: HttpClient) { }
 
   getAllProducts(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.baseApiUrl + '/api/products')
+    return this.http.get<Product[]>(this.baseApiUrl + '/api/products');
   }
 
   addProduct(newProduct: Product): Observable<Product>{

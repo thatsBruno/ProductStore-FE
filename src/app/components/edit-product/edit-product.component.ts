@@ -46,8 +46,8 @@ export class EditProductComponent implements OnInit {
           this.router.navigate(['products']);
         },
         error: (error) => {
-          console.log(error)
-        }
+          console.log(error);
+        },
       });
   }
 
